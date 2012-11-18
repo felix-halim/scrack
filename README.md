@@ -6,7 +6,7 @@ This is the source codes for the experiments in the
 
 To run a particular algorithm on a particular dataset, execute:
 
-    ./run.sh \[data\] \[algo\] \[nqueries\] \[workload\] \[selectivity\] \[timelimit\]
+    ./run.sh [data] [algo] [nqueries] [workload] [selectivity] [timelimit]
 
 
 \[data\] is one of the following:
@@ -65,5 +65,4 @@ To run a particular algorithm on a particular dataset, execute:
 Example runs:
 
     ./run.sh 100000000.data crack 100000 Random 1e-2 30
-
     ./run.sh skyserver.data dd1r 200000 SkyServer 1e-7 60
