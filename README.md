@@ -2,15 +2,16 @@ Stochastic Database Cracking
 ======
 
 This is the source codes for the experiments in the 
-[Stochastic Database Cracking paper](http://vldb.org/pvldb/vol5/p502_felixhalim_vldb2012.pdf).
+[Stochastic Database Cracking](http://vldb.org/pvldb/vol5/p502_felixhalim_vldb2012.pdf) paper.
 
 To run a particular algorithm on a particular dataset, execute:
 
-./run.sh \[data\] \[algo\] \[nqueries\] \[workload\] \[selectivity\] \[timelimit\]
+    ./run.sh \[data\] \[algo\] \[nqueries\] \[workload\] \[selectivity\] \[timelimit\]
+
 
 \[data\] is one of the following:
 - 100000000.data
-- skyserver.data (you must download it first arund 2.2GB and put it in "data" folder)
+- skyserver.data (it will be downloaded on demand around 2.2GB)
 
 \[algo\] is one of the following:
 - crack
@@ -52,7 +53,7 @@ To run a particular algorithm on a particular dataset, execute:
 - SeqZoomOut
 - Skew
 - ConsRandom
-- SkyServer (you need to download it first and put it in "data" folder)
+- SkyServer (downloaded on demand)
 
 \[selectivity\] is a floating point, e.g.:
 - 0.5 (means 50% selectivity)
@@ -63,5 +64,6 @@ To run a particular algorithm on a particular dataset, execute:
 
 Example runs:
 
-  ./run.sh 100000000.data crack 100000 Random 1e-2 30
-  ./run.sh skyserver.data dd1r 200000 SkyServer 1e-7 60
+    ./run.sh 100000000.data crack 100000 Random 1e-2 30
+
+    ./run.sh skyserver.data dd1r 200000 SkyServer 1e-7 60
