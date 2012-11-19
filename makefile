@@ -117,7 +117,7 @@ data/100000000.data: $(OUTDIR)/gen_data
 
 data/skyserver.data:
 	(cd data; \
-	 wget http://felix-halim.net/research/scrack/data/skyserver.data \
+	 wget http://felix-halim.net/research/scrack/data/skyserver.data; \
 	 wget http://felix-halim.net/research/scrack/data/skyserver.queries)
 
 .PHONY : clean
