@@ -80,5 +80,5 @@ if [ "$1" == "batch" ]; then
 	./run.sh 100000000.data aics1r 1000 Random 1e-2 NOUP $T
 	./run.sh 100000000.data aiss 1000 Random 1e-2 NOUP $T
 else
-	run $1 $2 $3 $4 $5 $6
+	run $1 $2 $3 $4 $5 $6 $7
 fi
