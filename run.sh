@@ -4,8 +4,8 @@ function run {
 	Q=$3 		# number of queries to be performed
 	WORK=$4 # query workload: Random, Skyserver
 	SEL=$5  # selectivity: 1e-2 ... 1e-6
-	T=$6    # maximum runtime limit in seconds
-	UPDT=NOUP # NOUP, HFLV, ROLL, TRASH, DELETE
+	UPDT=$6 # NOUP, HFLV, ROLL, TRASH, DELETE
+  T=$7    # maximum runtime limit in seconds
 	Qret=view # view, count
 
 	make -s -j 4
