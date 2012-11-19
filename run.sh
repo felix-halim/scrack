@@ -55,30 +55,30 @@ rm -f runs.js
 
 if [ "$1" == "batch" ]; then
 	T=3
-	./run.sh skyserver.data crack 10000 SkyServer 1e-2 $T
-	./run.sh 100000000.data crack 10000 Random 1e-2 $T
-	./run.sh 100000000.data sort 10000 Random 1e-2 $T
-	./run.sh 100000000.data scan 1000 Random 1e-2 $T
-	./run.sh 100000000.data ddc 1000 Random 1e-2 $T
-	./run.sh 100000000.data ddr 1000 Random 1e-2 $T
-	./run.sh 100000000.data dd1c 1000 Random 1e-2 $T
-	./run.sh 100000000.data dd1r 1000 Random 1e-2 $T
-	./run.sh 100000000.data mdd1r 1000 Random 1e-2 $T
-	./run.sh 100000000.data mdd1rp1 1000 Random 1e-2 $T
-	./run.sh 100000000.data mdd1rp5 1000 Random 1e-2 $T
-	./run.sh 100000000.data mdd1rp10 1000 Random 1e-2 $T
-	./run.sh 100000000.data mdd1rp50 1000 Random 1e-2 $T
-	./run.sh 100000000.data naive_r1th 1000 Random 1e-2 $T
-	./run.sh 100000000.data naive_r2th 1000 Random 1e-2 $T
-	./run.sh 100000000.data naive_r4th 1000 Random 1e-2 $T
-	./run.sh 100000000.data naive_r8th 1000 Random 1e-2 $T
-	./run.sh 100000000.data naive_r1x 1000 Random 1e-2 $T
-	./run.sh 100000000.data naive_r2x 1000 Random 1e-2 $T
-	./run.sh 100000000.data aicc 1000 Random 1e-2 $T
-	./run.sh 100000000.data aicc1r 1000 Random 1e-2 $T
-	./run.sh 100000000.data aics 1000 Random 1e-2 $T
-	./run.sh 100000000.data aics1r 1000 Random 1e-2 $T
-	./run.sh 100000000.data aiss 1000 Random 1e-2 $T
+	./run.sh skyserver.data crack 10000 SkyServer 1e-2 NOUP $T
+	./run.sh 100000000.data crack 10000 Random 1e-2 NOUP $T
+	./run.sh 100000000.data sort 10000 Random 1e-2 NOUP $T
+	./run.sh 100000000.data scan 1000 Random 1e-2 NOUP $T
+	./run.sh 100000000.data ddc 1000 Random 1e-2 NOUP $T
+	./run.sh 100000000.data ddr 1000 Random 1e-2 NOUP $T
+	./run.sh 100000000.data dd1c 1000 Random 1e-2 NOUP $T
+	./run.sh 100000000.data dd1r 1000 Random 1e-2 NOUP $T
+	./run.sh 100000000.data mdd1r 1000 Random 1e-2 NOUP $T
+	./run.sh 100000000.data mdd1rp1 1000 Random 1e-2 NOUP $T
+	./run.sh 100000000.data mdd1rp5 1000 Random 1e-2 NOUP $T
+	./run.sh 100000000.data mdd1rp10 1000 Random 1e-2 NOUP $T
+	./run.sh 100000000.data mdd1rp50 1000 Random 1e-2 NOUP $T
+	./run.sh 100000000.data naive_r1th 1000 Random 1e-2 NOUP $T
+	./run.sh 100000000.data naive_r2th 1000 Random 1e-2 NOUP $T
+	./run.sh 100000000.data naive_r4th 1000 Random 1e-2 NOUP $T
+	./run.sh 100000000.data naive_r8th 1000 Random 1e-2 NOUP $T
+	./run.sh 100000000.data naive_r1x 1000 Random 1e-2 NOUP $T
+	./run.sh 100000000.data naive_r2x 1000 Random 1e-2 NOUP $T
+	./run.sh 100000000.data aicc 1000 Random 1e-2 NOUP $T
+	./run.sh 100000000.data aicc1r 1000 Random 1e-2 NOUP $T
+	./run.sh 100000000.data aics 1000 Random 1e-2 NOUP $T
+	./run.sh 100000000.data aics1r 1000 Random 1e-2 NOUP $T
+	./run.sh 100000000.data aiss 1000 Random 1e-2 NOUP $T
 else
 	run $1 $2 $3 $4 $5 $6
 fi

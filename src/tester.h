@@ -182,7 +182,7 @@ int main(int argc, char *argv[]){
 					fprintf(stderr, "A");
 				}
 			} else if (K2 == -100000){
-				for (int j=0; j<K2; j++){
+				for (int j=0; j<1000; j++){
 					int idx = r.nextInt(N);
 					timing();
 						remove(arr[idx]);

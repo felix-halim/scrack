@@ -6,7 +6,7 @@ This is the source codes for the experiments in the
 
 To run a particular algorithm on a particular dataset, execute:
 
-    ./run.sh [data] [algo] [nqueries] [workload] [selectivity] [timelimit]
+    ./run.sh [data] [algo] [nqueries] [workload] [selectivity] [update] [timelimit]
 
 
 \[data\] is one of the following:
@@ -60,9 +60,19 @@ To run a particular algorithm on a particular dataset, execute:
 - 1e-2 (means 1% selectivity)
 - 1e-7 (means 0.00001% selectivity)
 
+\[update\] is one of the following:
+- NOUP (means read only queries)
+- LFHV (means low frequency high volume updates)
+- HFLV (means high frequency low volume updates)
+- ROLL (means queue-like update workload)
+- TRASH (means insert 1M tuples at 10, 10^5 th query)
+- DELETE (means delete 1000 tuples every 1000 queries)
+- APPEND (means gradually insert 10M queries every 1000 queries)
+
 \[timelimit\] is an integer denoting the maximum runtime in seconds before it is prematurely terminated (if exceeded).
 
 Example runs:
 
-    ./run.sh 100000000.data crack 100000 Random 1e-2 30
-    ./run.sh skyserver.data dd1r 200000 SkyServer 1e-7 60
+    ./run.sh 100000000.data crack 100000 Random 1e-2 NOUP 30
+    ./run.sh skyserver.data dd1r 200000 SkyServer 1e-7 NOUP 60
+    ./run.sh skyserver.data dd1r 200000 SkyServer 1e-7 HFLV 60
