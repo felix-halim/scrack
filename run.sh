@@ -79,6 +79,14 @@ if [ "$1" == "batch" ]; then
 	./run.sh 100000000.data aics 1000 Random 1e-2 NOUP $T
 	./run.sh 100000000.data aics1r 1000 Random 1e-2 NOUP $T
 	./run.sh 100000000.data aiss 1000 Random 1e-2 NOUP $T
+elif [ "$1" == "get-skyserver-dataset" ]; then
+	make -s data/skyserver.data
+	g++ src/data.cpp -o bin/data
+	bin/data data/skyserver.data
+elif [ "$1" == "get-skyserver-queries" ]; then
+	make -s data/skyserver.data
+	g++ src/query.cpp -o bin/query
+	bin/query < data/skyserver.queries
 else
 	run $1 $2 $3 $4 $5 $6 $7
 fi
