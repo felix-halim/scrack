@@ -2,7 +2,7 @@ Stochastic Database Cracking
 ======
 
 This is the source codes for the experiments in the 
-[Stochastic Database Cracking](http://vldb.org/pvldb/vol5/p502_felixhalim_vldb2012.pdf) paper.
+[Stochastic Database Cracking: Towards Robust Adaptive Indexing in Main-Memory Column-Stores](http://vldb.org/pvldb/vol5/p502_felixhalim_vldb2012.pdf) paper.
 
 To run a particular algorithm on a particular dataset, execute:
 
