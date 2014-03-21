@@ -97,7 +97,7 @@ int main(int argc, char *argv[]){
 	}
 	int N = total;
 	int cap = N*2+100;
-	if (ferror(in)){ perror("Irvan"); fprintf(stderr,"Error reading %s!\n", argv[1]); exit(1); }
+	if (ferror(in)){ perror("Error while reading file"); fprintf(stderr,"Error reading %s!\n", argv[1]); exit(1); }
 	if (!feof(in)){ fprintf(stderr,"Allocated array not enough! (read = %d)\n",N); exit(1); }
 	fclose(in);
 	int mx = *max_element(arr, arr+N), Qret = 0;
