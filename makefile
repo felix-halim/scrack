@@ -94,13 +94,13 @@ $(OUTDIR)/ai: $(SRCDIR)/ai.cpp $(SRCDIR)/ai.h $(TESTER_H_DEP) $(CRACKERS_H_DEP)
 	$(CC) $(CFLAGS) -DCRACK_AT=128 -DCOMPACT_EVERY=1000000000 -DAICS1R -DAI_IPS=1000000 -o $(OUTDIR)/aics1r $(SRCDIR)/ai.cpp -lz
 	touch $(OUTDIR)/ai
 
-$(OUTDIR)/res_parser: $(SRCDIR)/res_parser.cpp -lz
+$(OUTDIR)/res_parser: $(SRCDIR)/res_parser.cpp
 	$(CC) $(CFLAGS) -o $(OUTDIR)/res_parser $(SRCDIR)/res_parser.cpp -lz
 
-$(OUTDIR)/res_table: $(SRCDIR)/res_table.cpp -lz
+$(OUTDIR)/res_table: $(SRCDIR)/res_table.cpp
 	$(CC) $(CFLAGS) -o $(OUTDIR)/res_table $(SRCDIR)/res_table.cpp -lz
 
-$(OUTDIR)/gen_data: $(SRCDIR)/gen_data.cpp -lz
+$(OUTDIR)/gen_data: $(SRCDIR)/gen_data.cpp
 	$(CC) $(CFLAGS) -o $(OUTDIR)/gen_data $(SRCDIR)/gen_data.cpp -lz
 
 data/1000000.data: $(OUTDIR)/gen_data
