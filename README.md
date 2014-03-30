@@ -1,4 +1,4 @@
-Stochastic Database Cracking
+Stochastic Database Cracking [![Build Status](https://travis-ci.org/felix-halim/scrack.svg?branch=master)](https://travis-ci.org/felix-halim/scrack)
 ======
 
 This is the source codes for the experiments in the 
