@@ -1,4 +1,5 @@
 language: cpp
 
 script: 
+  - ./run.sh 10000000.data crack 100000 Random 1e-2 NOUP 30
   - ./run.sh 100000000.data crack 100000 Random 1e-2 NOUP 30
