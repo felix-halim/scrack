@@ -77,18 +77,12 @@ Example runs:
     ./run.sh skyserver.data dd1r 200000 SkyServer 1e-7 NOUP 60
     ./run.sh skyserver.data dd1r 200000 SkyServer 1e-7 HFLV 60
 
-Download SkyServer dataset and queries
+SkyServer dataset and queries
 ======
 
-The SkyServer dataset consists of a sequence of 585634221 integers which represents the degree of ascension
+The SkyServer dataset in the data folder consists of a sequence of 585634221 integers which represents the degree of ascension
 in the Photoobjall table. Originally the degree is a floating point between 0 to 360, but in this dataset,
-it has been multiplied by 1 million and converted to integers. Run the following command to get the dataset
-(it may take very long to download).
+it has been multiplied by 1 million and converted to integers.
 
-    ./run.sh get-skyserver-dataset
-
-Similarly, the SkyServer queries consist of a sequence of 158325 point queries on the ascension column
+The SkyServer queries consist of a sequence of 158325 point queries on the ascension column
 (similarly formatted by multiplying it by 1 million and converted to integers).
-
-    ./run.sh get-skyserver-queries
-
