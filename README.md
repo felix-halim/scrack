@@ -71,11 +71,9 @@ To run a particular algorithm on a particular dataset, execute:
 
 \[timelimit\] is an integer denoting the maximum runtime in seconds before it is prematurely terminated (if exceeded).
 
-Example runs:
+Example run:
 
     ./run.sh 100000000.data crack 100000 Random 1e-2 NOUP 30
-    ./run.sh skyserver.data dd1r 200000 SkyServer 1e-7 NOUP 60
-    ./run.sh skyserver.data dd1r 200000 SkyServer 1e-7 HFLV 60
 
 SkyServer dataset and queries
 ======
@@ -83,7 +81,12 @@ SkyServer dataset and queries
 The SkyServer dataset consists of a sequence of 585634221 integers which represents the degree of ascension
 in the Photoobjall table. Originally the degree is a floating point between 0 to 360, but in this dataset,
 it has been multiplied by 1 million and converted to integers.
-You will need to unzip the skyserver.data.gz in the data folder before using it.
+You will need to download the SkyServer dataset from
+[scrack-skyserver-dataset](https://github.com/felix-halim/scrack-skyserver-dataset) repository.
+Then you will be able to run:
+
+    ./run.sh skyserver.data dd1r 200000 SkyServer 1e-7 NOUP 60
+    ./run.sh skyserver.data dd1r 200000 SkyServer 1e-7 HFLV 60
 
 The SkyServer queries consist of a sequence of 158325 point queries on the ascension column
 (similarly formatted by multiplying it by 1 million and converted to integers).
