@@ -80,9 +80,10 @@ Example runs:
 SkyServer dataset and queries
 ======
 
-The SkyServer dataset in the data folder consists of a sequence of 585634221 integers which represents the degree of ascension
+The SkyServer dataset consists of a sequence of 585634221 integers which represents the degree of ascension
 in the Photoobjall table. Originally the degree is a floating point between 0 to 360, but in this dataset,
 it has been multiplied by 1 million and converted to integers.
+You will need to unzip the skyserver.data.gz in the data folder before using it.
 
 The SkyServer queries consist of a sequence of 158325 point queries on the ascension column
 (similarly formatted by multiplying it by 1 million and converted to integers).
